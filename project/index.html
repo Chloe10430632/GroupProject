@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" data-theme="bumblebee">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit</title>
+
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="32x32">
+
+    <!-- 掛載字體 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- 掛載daisy ui -->
+    <script type="module" src="https://unpkg.com/cally"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+    <!-- 掛載icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        .dock-active {
+            color: #ff8904;
+        }
+    </style>
+
+</head>
+
+<body class="bg-base-200">
+    <header class="bg-primary shadow-sm sticky top-0 z-10">
+
+        <div class="container mx-auto max-w-7xl px-4">
+
+            <!-- 電腦版功能選單 -->
+            <div class="navbar flex justify-between">
+
+                <!-- Orbit品牌logo -->
+                <div class="flex-none mr-5">
+                    <a class="btn btn-ghost text-xl" href="index.html">
+                        <img src="images/orbit-custom-logo.svg" alt="orbit-logo-img" class="w-30">
+                    </a>
+                </div>
+
+                <!-- 搜尋框 -->
+                <div class="hidden md:block md:flex-1">
+                    <label class="input w-1/2 cursor-pointer">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                                stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </g>
+                        </svg>
+                        <input type="search" class="grow pl-5 cursor-pointer" placeholder="搜尋 怪奇物語 結局" />
+                    </label>
+                </div>
+
+                <!-- 登入註冊 -->
+                <!-- 會員登入 -->
+                <div class="flex">
+                    <a href="" class="mr-2">
+                        <div class="btn btn-primary border-none">登入/註冊</div>
+                    </a>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full text-center content-center">
+                                <img alt="Tailwind CSS Navbar component"
+                                    src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            </div>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 手機板功能選單 -->
+            <div class="dock md:hidden">
+                <button class="dock-active">
+                    <i class="fa-solid fa-house-chimney text-lg"></i>
+                    <span class="dock-label">首頁</span>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-table-columns text-lg"></i>
+                    <span class="dock-label">分類</span>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-shop text-lg"></i>
+                    <span class="dock-label">商城</span>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-flag"></i>
+                    <span class="dock-label">通知</span>
+                </button>
+                <button>
+                    <i class="fa-solid fa-user-astronaut"></i>
+                    <span class="dock-label">登入</span>
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <main>
+
+
+    </main>
+    <!-- <footer></footer> -->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

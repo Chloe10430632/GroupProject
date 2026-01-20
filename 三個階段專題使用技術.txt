@@ -1,0 +1,36 @@
+C#、元件開發、SQLServer、ADO.NET => 個人專題
+
+=============================================
+
+網頁技術
+前後端混在一起
+HTML/CSS、JavaScript、(jQuery、Bootstrap) => 前端
+LINQ、ASP.NET Core MVC => 後端  => 專題
+
+M => ADO.NET
+V => View => 前端+後端(Razor)
+C
+
+前後端分離
+=============================================
+ASP.NET Core Web API => RESTful API => 後端
+TypeScript + Angular  => 前端
+
+=============================================
+
+2002以前
+視窗 => Visual Basic => VB => Window Form
+網頁技術 => ASP
+
+2002 => .NET Framewrok => VB.NET、C#
+     => ASP.NET Web Form
+     => ASP.NET MVC
+
+現在 .NET Core
+ => ASP.NET Core MVC
+
+
+MVC => Model View Controller
+View => HTML、CSS、JavaScript + Razor
+Model => ADO.NET、EF
+

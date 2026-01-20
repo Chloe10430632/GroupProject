@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="bumblebee">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind測試</title>
+
+    <!-- 掛載daisy ui -->
+    <script type="module" src="https://unpkg.com/cally"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="container mx-auto bg-base-200 p-5">
+        <div class="flex flex-wrap md:flex-row items-center justify-center">
+            <div class="w-full md:w-1/4 mb-3 flex justify-center">
+                <fieldset class="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4">
+                    <legend class="fieldset-legend">Login</legend>
+
+                    <label class="label">Email</label>
+                    <input type="email" class="input" placeholder="Email" />
+
+                    <label class="label">Password</label>
+                    <input type="password" class="input" placeholder="Password" />
+
+                    <button class="btn btn-neutral mt-4">Login</button>
+                </fieldset>
+            </div>
+            <div class="w-full md:w-1/4 mb-3 flex justify-center">
+                <calendar-date class="cally bg-base-100 border border-base-300 shadow-lg rounded-box p-5">
+                    <svg aria-label="Previous" class="fill-current size-5 " slot="previous"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                    </svg>
+                    <svg aria-label="Next" class="fill-current size-5" slot="next" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                    </svg>
+                    <calendar-month></calendar-month>
+                </calendar-date>
+            </div>
+            <div class="w-full md:w-1/4 mb-3">
+                <div class="card bg-base-100 shadow-sm">
+                    <div class="btn btn-primary">Buy Now</div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/4 mb-3">
+                <div class="card bg-base-100 shadow-sm">
+                    <div class="btn btn-primary">Buy Now</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto bg-base-200 p-5">
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center">
+            <div class="md:col-span-3 bg-secondary text-white">我會跟右邊的中線對齊</div>
+            <div class="md:col-span-9 bg-warning text-white">我很長...<br>長到<br>撐開高度</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
